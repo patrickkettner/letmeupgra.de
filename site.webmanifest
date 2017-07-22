@@ -1,0 +1,15 @@
+{
+  "name": "Upgrade U",
+  "short_name": "Upgrade U",
+  "lang": "en-US",
+  "start_url": "/you?pwa",
+  "display": "fullscreen",
+  "theme_color": "#d8abc9",
+  "icons": [
+    {
+      "src": "./icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}

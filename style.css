@@ -1,0 +1,52 @@
+html, body {
+  background: #090b0a;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+html {
+  background-image: url(./gold.jpg);
+}
+
+@keyframes flash {
+  0% {
+    background: rgba(9, 11, 10, 0.25);
+  }
+  100% {
+    background: rgba(9, 11, 10, 1);
+  }
+}
+
+body.active {
+  animation: flash 4s;
+}
+
+.button {
+  width: 50vmin;
+  height: 50vmin;
+  border-radius: 50%;
+  background: #d8abc9;
+  outline: 0;
+  border: 15px solid #d8abc9;
+  transition: box-shadow 0.05s ease-in-out;
+  cursor: pointer;
+}
+.button:focus {
+  box-shadow: inset 0px 0px 20px 2px rgba(9, 11, 10, 0.5);
+}
+.button:active {
+  box-shadow: inset 0px 0px 20px 10px  rgba(9, 11, 10, 0.5);
+}
